@@ -1,0 +1,14 @@
+{
+  "languages": {
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "common": {
+    "brand": "React template App",
+    "version": "v{{version}}"
+  },
+  "footer": {
+    "message": "Powered by ",
+    "powered-by": "Javier Maestre"
+  }
+}

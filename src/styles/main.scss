@@ -1,0 +1,64 @@
+body, html, #root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+}
+
+:focus {
+  outline: 0;
+}
+
+.image-32 {
+  width: 32px;
+  height: 32px;
+}
+
+.image-48 {
+  width: 48px;
+  height: 48px;
+}
+
+.image-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.logo-auth {
+  width: 138px;
+  height: 40px;
+}
+
+.notification-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+.toast {
+  width: 350px;
+
+  &.show {
+    display: block;
+    opacity: 1;
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  .color-inherit {
+    color: inherit;
+  }
+
+  >.alert {
+    margin: 0;
+  }
+}
