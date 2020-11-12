@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <div className="py-3 text-center">
         <small>
           {t('footer.message')}
-          <a rel="noreferrer" target="_blank" href="https://github.com/javiermaestre">
+          <a rel="noreferrer" target="_blank" href="https://github.com/jmaestree">
             {t('footer.powered-by')}
           </a>
         </small>
