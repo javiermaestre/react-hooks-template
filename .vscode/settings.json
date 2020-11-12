@@ -11,13 +11,5 @@
     "source.fixAll.eslint": true
   },
   "eslint.validate": ["javascript", "javascriptreact", "html", "typescriptreact", "typescript"],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "eslint.enable": true,
-  "eslint.options": {
-    "eslintOptions.configFile": "../client/.eslintrc.js"
-  },
-  "eslint.workingDirectories": [
-    { "directory": "client", "changeProcessCWD": true },
-    { "directory": "server", "changeProcessCWD": true }
-  ]
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
