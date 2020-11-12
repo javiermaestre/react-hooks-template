@@ -9,13 +9,13 @@ import { useForm } from 'react-hook-form';
 
 /* Local imports */
 import Dates from '../../shared/utils/dates';
-import Logo from '../../static/images/logo.png';
 import { Button, ButtonSize, ButtonVariant } from '../../shared/components';
 import { AuthToken } from '../../shared/api/models';
-import { REGEX_EMAIL } from '../../shared/utils/form-validations';
+import { REGEX_EMAIL } from '../../shared/utils/form';
 import { login } from '../../shared/api/services';
 import { setCookie } from '../../shared/utils/cookies';
 import { setNotification } from '../../store/actions';
+import { getPublicURL } from '../../shared/utils/url';
 
 interface LoginForm {
   email: string;
@@ -52,7 +52,7 @@ const Login: React.FC = () => {
       <div className="col-xs-12 col-md-8">
         <div className="mb-5 text-center">
           <figure className="avatar avatar-company avatar-lg">
-            <img className="w-50" alt="CF Can Vidalet" src={Logo} />
+            <img className="w-50" alt="CF Can Vidalet" src={getPublicURL('logo.png')} />
           </figure>
         </div>
         <h1 className="heading-lg mb-4">{t('pages.login.page-title')}</h1>
