@@ -1,13 +1,6 @@
 /* React imports */
 import React from 'react';
 
-interface ProductFilters {
-  search: string;
-  types: string[];
-  country: string[];
-  status: string[];
-}
-
 const Homepage: React.FC = () => {
   return (
     <div className="d-flex flex-column">
