@@ -5,9 +5,9 @@ import React from 'react';
 import useAuth from '../../shared/hooks/useAuth';
 import ErrorImage from '../../static/images/error.gif';
 import Footer from '../../layouts/dashboard/components/footer';
-import Logo from '../../static/images/logo.png';
 import { pathnames } from '../../shared/routes/pathnames';
 import { Button, ButtonVariant } from '../../shared/components';
+import { getPublicURL } from '../../shared/utils/url';
 
 interface Props {
   error?: Error;
@@ -29,7 +29,7 @@ const ErrorFallback: React.FC<Props> = ({ error }) => {
         <div className="page-container">
           <div className="d-flex align-items-center flex-column">
             <div className="text-center mb-4">
-              <img className="logo-auth" alt="CF Can Vidalet" src={Logo} />
+              <img className="logo-auth" alt="CF Can Vidalet" src={getPublicURL('logo.png')} />
             </div>
             <div className="text-center">
               <h1 className="heading-lg">Something went wrong!</h1>

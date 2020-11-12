@@ -8,8 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 /* Local imports */
 import { pathnames, Pathname } from '../../../shared/routes/pathnames';
-
-import Logo from '../../../static/images/logo.png';
+import { getPublicURL } from '../../../shared/utils/url';
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
@@ -17,8 +16,14 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar navbar-light bg-light d-flex align-items-center justify-content-between p-3 mb-3">
-      <Link className="navbar-brand d-flex align-items-center" to={pathnames.homepage.getPath()}>
-        <img className="d-flex d-inline-block align-top" alt="CF Can Vidalet" src={Logo} width={30} height={30} />
+      <Link className="navbar-brand d-flex align-items-center" to={pathnames?.homepage?.getPath()}>
+        <img
+          className="d-flex d-inline-block align-top"
+          alt="CF Can Vidalet"
+          src={getPublicURL('logo.png')}
+          width={30}
+          height={30}
+        />
 
         <span className="d-flex ml-3">{t('common.brand')}</span>
       </Link>
