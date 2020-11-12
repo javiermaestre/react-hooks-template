@@ -11,7 +11,7 @@ import { useForm } from 'react-hook-form';
 import Dates from '../../shared/utils/dates';
 import { Button, ButtonSize, ButtonVariant } from '../../shared/components';
 import { AuthToken } from '../../shared/api/models';
-import { REGEX_EMAIL } from '../../shared/utils/form-validations';
+import { REGEX_EMAIL } from '../../shared/utils/form';
 import { login } from '../../shared/api/services';
 import { setCookie } from '../../shared/utils/cookies';
 import { setNotification } from '../../store/actions';
